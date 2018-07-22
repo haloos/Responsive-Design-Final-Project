@@ -1,159 +1,81 @@
-/* Setting up our grid */
-.container {
-	width: 100%; /*Set the width of the entire website here */
-	margin-right: auto;
-	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+body{
+	font-family:"Arial", Serif;
+	background-color: #f4f4f4;
+	overflow-x:hidden;
 }
-.seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child { 
-	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
-}
-.eleven {
-	width: 91.5%;
-	float: left;
-	margin-left: 2%;
-}
-.ten {
-	width: 83%;
-	float: left;
-	margin-left: 2%;
-}
-.nine {
-	width: 74.5%;
-	float: left;
-	margin-left: 2%;
-}
-.eight {
-	width: 66%;
-	float: left;
-	margin-left: 2%;
-}
-.seven {
-	width: 57.5%;
-	float: left;
-	margin-left: 2%;
-}
-.six {
-	width: 49%; /* This div spans six columns (the entire row)*/
-	float: left;
-	margin-left: 2%;
-}
-.five {
-	width: 40.5%; /* This div spans five columns */
-	margin-left: 2%;
-	float:left;
-}
-.four {
-	width: 32%;
-	float:left;
-	margin-left: 2%;
-}
-.three {
-	width: 23.5%;
-	float:left;
-	margin-left: 2%;
-}
-.two {
-	width: 15%;
-	float:left;
-	margin-left: 2%;
 
+.navbar{
+	background-color: #3b5998;
+	overflow: hidden;
+	height:63px;
 }
-.one {
-	width: 6.5%;
+
+.navbar a{
 	float:left;
-	margin-left: 2%;
+	display: block;
+	color:#f2f2f2;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+	font-size:17px;
 }
-.row {
+
+.navbar ul{
+	margin: 8px 0 0 0;
+	list-style: none;
+}
+
+.navbar a:hover{
+	background: #e91e63;
+	color:#000;
+}
+
+.side-nav{
+	height:100%;
+	width:0;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x:hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.side-nav a{
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 22px;
+	color:#ccc;
+	display:block;
+	transition: 0.3s;
+}
+
+.side-nav a:hover{
+	color:#fff;
+}
+
+.side-nav .btn-close{
+	position: absolute;
+	top:0;
+	right:22px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main{
+	transition: margin-left 0.5s;
+	padding: 20px;
+	overflow: hidden;
 	width: 100%;
-	clear: both; /* Clear creates new styles for the next row */
-	padding: 0px;
-	margin: 0px;
 }
 
-header {
-	height: 73px;
-	background-color: #d13328;
-}
-.hero-image {
-	height: 510px;
-  	background: url(image1.jpg) no-repeat center center fixed; 
+@media(max-width:568px){
+  .navbar-nav{display:none}
 }
 
-.row3 .six, .row3 .three {
-	height: 333px;
-	background-color: #F89406;
-}
-.row4 .six, .row4 .three {
-	height: 333px;
-	background-color: #F9690E;
-}
-.row5 .six, .row5 .three {
-	height: 333px;
-	background-color: #FDE3A7;
-}
-.row6 .six, .row6 .three {
-	height: 333px;
-	background-color: #F27935;
-}
-.last {
-	height: 73px;
-	background-color: #d13328;
-}
-footer {
-	height: 443px;
-	background-color: #FDE3A7;
-}
-
-/* CFS CSS */
-
-html{
-    font-family: 'Merriweather', serif;
+@media(min-width:568px){
+	/*.open-slide{display:none}*/
   }
-  
-  
-  
-  
-  body{
-    background-color: blue;
-    text-align:center;
-    
-  }
-  
-  img {
-     width: 90px;
-     height: 90px;
-     float: left;
-  }
-  
-  #idCard {
-     border: 5px solid black;
-     height: 14em;
-     width: 20em;
-      background-color: red;
-    margin:auto;
-  }
-
-  /* media queries */
-
-/* Phone */
-  @media only screen
-and (min-device-width: 70px)
-and (max-device-width: 30px)
-and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* Tablet */
-@media only screen
-and (min-device-width: 50px)
-and (max-device-width: 50px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Computer */
-@media screen
-and (min-device-width: 30px)
-and (max-device-width: 70px)
-and (-webkit-min-device-pixel-ratio: 1) {
-}
